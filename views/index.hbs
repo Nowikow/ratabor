@@ -1,0 +1,326 @@
+<!--элемент тела-->
+
+<!-- статичная часть страницы-->
+<div class='login'>
+<form id='transform1' action="/" method="POST">
+
+    <div class='login_link'>
+        <a href="/login">Войти</a>
+    </div>
+
+    <p>Здравствуйте! Это форма регистрации участников и административного персонала фестиваля “Времена и эпохи 2020”. Пожалуйста, внимательно заполните все поля формы и ждите ответа координатора</p>
+
+    <div class='globalform_form'>
+        <label for="tp_of_dng">Род занятий на фестивале?</label>
+        <select name='doType' class='globalform_form_type' id="tp_of_dng" required>
+            <option class='nullOpt' selected='document.getElementById('regscroll').classList.add('hiddenall')'></option>
+            <option class='recOpt'selected="document.getElementById('regscroll').classList.remove('hiddenall')">Реконструктор</option>
+            <option class='sellOpt'>Торговец</option> 
+            <option class='admOpt'>Административный персонал</option>
+        </select>
+    </div>
+<!-- При выборе варианта, появляется остальная часть страницы-->
+    <div class='regscroll'>
+        <h1 class='globalform_title'>Список вопросов для участников</h1>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="sur">Фамилия</label>
+                <input name='surname' class='globalform_form_type' id='sur' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="name">Имя</label>
+                <input name='name' class='globalform_form_type' id='name' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="sec_nm">Отчество</label>
+                <input name='secName' class='globalform_form_type' id='sec_nm' type="text" required>
+                
+                <div class='globalform_form_check'>
+                    <input name='noSecName' id='check' type="checkbox">
+                    <label for="check">нет отчества</label>
+                </div>
+            </div>
+        </div>
+    
+        <p><b>Как в загранпаспорте</b></p>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="sur_en">Фамилия (eng)</label>
+                <input name='surnameEn' class='globalform_form_type' id='sur_en' type="text" required>
+            </div>
+
+            
+            <div class='globalform_form'>
+                <label for="name_en">Имя (eng)</label>
+                <input name='nameEn' class='globalform_form_type' id='name_en' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="sec_nm_en">Отчество (eng)</label>
+                <input name='secNameEn' class='globalform_form_type' id='sec_nm_en' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="phone">Телефон</label>
+                <input name='phone' class='globalform_form_type' id='phone' type="tel" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="mail">Почта</label>
+                <input name='email' class='globalform_form_type' id='mail' type="email"  value="mail@example.com" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="smm">Ссылка на страницу в соцсетях</label>
+                <input name='smm' class='globalform_form_type' id='smm' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            
+            <div class='globalform_form'>
+                <label for="birth_d">Дата рождения</label>
+                <input name='dateBirth' class='globalform_form_2type' id='birth_d' type="date" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="birth_pl">Место рождения</label>
+                <input name='placeBirth' class='globalform_form_2type' id='birth_pl' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="pass_ser">Серия паспорта</label>
+                <input name='passSerie' class='globalform_form_2type' id='pass_ser' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="pass_num">Номер паспорта</label>
+                <input name='passNumber' class='globalform_form_2type' id='pass_num' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+                
+            <div class='globalform_form'>
+                <label for="pass_who">Паспорт выдан</label>
+                <input name='passWho' class='globalform_form_2type' id='pass_who' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="pass_when">Дата выдачи</label>
+                <input name='passWhen' class='globalform_form_2type' id='pass_when' type="date" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            
+            <div class='globalform_form'>
+                <label for="who">Гражданство</label>
+                <input name='Who' class='globalform_form_type' id='who' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="land">Страна</label>
+                <input name='land' class='globalform_form_type' id='land' type="text" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="town">Город</label>
+                <input name='town' class='globalform_form_type' id='town' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="cl_size">Размер одежды</label>
+                <select name='clothSize' class='globalform_form_2type' id="cl_size" required>
+                    <option>XS</option>
+                    <option>S</option> 
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
+                </select>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="sex">Пол</label>
+                <select name='sex' class='globalform_form_2type' id="sex" required>
+                    <option>Женщина</option>
+                    <option>Мужчина</option>
+                </select>
+            </div>
+        </div>
+
+        <div class='globalform_choosespaces'>
+            <label for="spaces">Выберите площадки</label>
+            <input name='spaces' class='globalform_form_type' type="button" value="Показать список" id="spaces" required></input>
+        </div>
+
+        <div  class='globalform_line'>
+            
+            <div class='globalform_form'>
+                <label for="foto3x4">Фото на пропуск (3x4)</label>
+                <input name="foto34" class='globalform_form_2type' id='foto3x4' type="file" required>
+            </div>
+
+        <!-- только для адм персонала-->
+            <div class='globalform_form'>
+                <label for="job">Должность</label>
+                <select name='job' class='globalform_form_2type' id="job" required>
+                    <option>Сержант инфо-службы</option>
+                    <option>Сотрудник инфо-службы</option>
+                    <option>Организатор</option>
+                    <option>Координатор</option>
+                    <option>Технический директор</option>
+                    <option>Реквизитор</option>
+                    <option>Фотограф технический</option>
+                    <option>Костюмер</option>
+                    <option>Шеф монтажа</option>
+                    <option>Помощник шеф монтажа</option>
+                    <option>Мастеровой</option>
+                    <option>Дроид</option>
+                    <option>Логист</option>
+                    <option>Технический дизайнер</option>
+                    <option>Замеситель тех директора</option>
+                    <option>Администратор</option>
+                    <option>Инструментальщик</option>
+                    <option>Интегратор</option>
+                    <option>Стажер</option>
+                    <option>Монтажник</option>
+                </select>
+            </div>    
+        </div>
+
+        <!-- для всех-->
+
+        <p><b>Фото в костюме, в котором вы будете работать на площадке</b></p>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="foto1">Фото в костюме 1</label>
+                <input name="fotoClOne" class='globalform_form_2type' id='foto1' type="file" required>
+            </div>
+
+            
+            <div class='globalform_form'>
+                <label for="foto2">Фото в костюме 2</label>
+                <input class='globalform_form_2type' id='foto2' type="file" name="fotoClTwo" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="clubs">Название клуба</label>
+                <input name='club'  class='globalform_form_2type' id='clubs' type="text" required>
+            </div>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+
+            <div class='globalform_form'>
+                <label for="role">Чем занимаетесь на площадке</label>
+                <textarea name='role' class='globalform_form_2type' id="role" required></textarea>
+            </div>
+        </div>
+
+        <p>
+        <input name='logistic' id='log' type="checkbox">
+        <label for="log">Необходимость в организации логистики (проезд и проживание участника фестиваля, доставка багажа/экстрабагажа)</label>
+        </p>
+
+        <!-- При выборе варианта, появляется остальная часть страницы-->
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="whoisyourdaddy">С кем вы едете?</label>
+                <input name='whoisyourdaddy' class='globalform_form_3type' id='whoisyourdaddy' type="text" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="scan">
+                    <p><b>Скан / фото паспорта</b></p>
+                    <p class='globalform_form_nonmr'>(обязательное условие для приобретения авиа- и ж/д-билетов в целях избежания ошибок при вводе данных)</p>
+                </label>
+                <input class='globalform_form_type' id='scan' type="file" name="fotoPass" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="town_now">Город текущего пребывания (откуда едете на фестиваль)</label>
+                <input name='townNow' class='globalform_form_3type' id='town_now' type="text" required> 
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="date_arr">Дата прибытия в Москву</label>
+                <input name='dateArr' class='globalform_form_2type' id='date_arr' type="date" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="date_dep">Дата отъезда из Москвы</label>
+                <input name='dateDep' class='globalform_form_2type' id='date_dep' type="date" required>
+            </div>
+        </div>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="info_lug">Информация по багажу (объем, экстрабагаж)</label>
+                <textarea name='lugInfo' class='globalform_form_2type' id='info_lug' required></textarea>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="trans">Трансфер</label>
+                <select name='transfer' class='globalform_form_2type' id="trans" required>
+                    <option>аэропорт-гостиница</option>
+                    <option>аэропорт-площадка</option>
+                    <option>площадка-аэропорт</option>
+                    <option>гостиница-аэропорт</option>
+                </select>
+            </div>
+        </div>
+
+
+        <h2 class='globalform_title'>Гостиница (необходимость в предоставлении проживания) уточняйте у координатора</h2>
+
+        <div class='globalform_line'>
+            <div class='globalform_form'>
+                <label for="date_come">Дата заезда</label>
+                <input name='comeDate' class='globalform_form_2type' id='date_come' type="date" required>
+            </div>
+
+            <div class='globalform_form'>
+                <label for="date_out">Дата выезда</label>
+                <input name='outDate' class='globalform_form_2type' id='date_out' type="date" required>
+            </div>
+        </div>
+
+        <!-- Для всех -->
+        <div class='globalform_submit'>
+            <label for="give"><b>Я даю свое согласие на обработку моих персональных данных</b></label>
+            <input name='giveOk' id='give' type="checkbox" required> 
+            <p><input type="submit"></p>
+        </div>
+    </div>
+</form>
+</div>

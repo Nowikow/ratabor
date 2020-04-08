@@ -1,0 +1,84 @@
+.bar {
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.bar_sp {
+    font-size: 14pt; 
+    text-transform: uppercase;
+}
+
+.switch_sect {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 70px;
+}  
+
+.globalform {
+    max-width: 780px;
+    margin: 70px auto;
+}
+
+.globalform_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.globalform_form_type {
+    height: 30px;
+    width: 200px;
+    margin: 5px 0;
+}
+
+.globalform_title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.globalform_line {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+.globalform_form_check {
+    display: flex;
+}
+
+.globalform_form_2type{
+    height: 30px;
+    width: 350px;
+    margin: 5px 0;
+}
+
+.globalform_choosespaces {
+    width: 200px;
+    margin: 5px 0;
+}
+
+.globalform_form_3type {
+    width: 400px;
+    height: 30px;
+    margin: 5px 0;
+}
+
+.globalform_form_nonmr {
+    margin: -10px 0 0 0;
+}
+
+.globalform_submit {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hiddenall {
+    display: none;
+}
+
+.login {
+    max-width: 780px;
+    margin: 70px auto;
+    text-align: center;
+}
+
