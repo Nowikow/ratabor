@@ -29,7 +29,7 @@ app.set('views', 'views')
 //БД
 async function start() {
     try {
-        const url = `mongodb+srv://adm:zaq123edc@cluster0-9nhaf.mongodb.net/Ratabor` 
+        const url = `mongodb+srv://#######` 
         await mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
 
         //прослушивание на заданном порте
